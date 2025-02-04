@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.img{
+    width:100vw;
+    height:87vh;
+    object-fit: cover;
+    
+}
+
+.gol{
+    border-radius: 50% !important;
+    width: 6px !important;
+    height: 6px !important;
+    background-color: #FFC107 !important;
+}
+
+.button-get{
+    font-size: 0.7em;
+    font-weight: 600;
+    opacity: 0.7;
+    /* background-color: rgb(238, 255, 0); */
+}
+.button-top{
+    font-size: 0.7em;
+    font-weight: 600;
+    /* opacity: 0.7; */
+    /* background-color: rgb(238, 255, 0); */
+}
+
+
+.Read-more-1{
+    color: #FFC107;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+.h4-services{
+    font-weight: 700;
+    /* position: relative; */
+    
+}
+.h4-services::after{
+    content: '';
+    position:absolute;
+    top:1.7em;
+    right:2em;
+    width: 40%;
+    height: 0.2rem;
+    background:rgb(255, 193, 7);
+}
+.our-serv{
+    cursor: pointer;
+}
+.our-serv::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 0.2em;
+    background:rgb(255, 193, 7);
+}
+
+.our-serv-aft::after{
+    transform: scale(0,1);
+    transition: transform 0.2s ease-out;
+}
+
+.our-serv-aft:hover::after{
+    transform: scale(2,1);
+}
+.bg-added{
+    background: url('./last\ back');
+    width: 100vw;
+    height:auto;
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+}
+.h2-project-2::after{
+    content: '';
+    position:absolute;
+    width: 50%;
+    height: 0.2rem;
+    bottom:0;
+    left:3.5rem;
+    background:rgb(255, 193, 7);
+}
+
+/* header */
+header {
+    background-color: #e0e0e0;
+    padding: 10px 0;
+  }
+header .contact-info div {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+  }
+  header .contact-info div svg {
+    margin-right: 5px;
+  }
+  header .social-icons svg {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  header .social-icons svg:hover {
+    color: #FFC107;
+  }
+
+  @media (max-width:511px){
+    header{
+        display: none;
+    }
+  }
+  @media (max-width:400px){
+    .why-choose{
+        width: 60px !important;
+        height: 20px !important;
+    }
+    .sec-5-img{
+        display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    header .contact-info {
+      flex-direction: column;
+      text-align: center;
+      /* background:rgb(255, 193, 7); */
+      gap: 10px;
+    }
+    .img{
+        width:auto;
+        height:auto;
+        object-fit: cover; 
+    }
+    header .social-icons {
+        justify-content: center;
+    }
+    nav .navbar-brand {
+        text-align: center;
+    }
+    .image-sm-size{
+        width: 100vw;
+        height:auto;
+        object-fit: cover;
+    }
+    .text-size-services{
+        font-size: small;
+    }
+    /* .image-sm-size-all{
+        width: 1200px; */
+        /* background-color: red;
+    } */
+    .change-direc{
+        flex-direction: column;
+        /* width: 100vw; */
+        /* background-color: red; */
+        /* color: white; */
+    }
+    .Hidden{
+        display: none;
+    }
+    .Overlay-1 h2,.Overlay p,.Overlay button{
+        font-size: xx-small;
+      }
+}
+@media (max-width:1080px){
+    .text-size-services{
+        font-size: small;
+    }
+    .image-sm-size{
+        object-fit: contain;
+
+    }
+}
+@media (max-width:1000px){
+    .working-footer{
+        margin-top: 10px !important;
+        /* background-color: red; */
+    }
+}
+
+/* navbar */
+nav .navbar-nav .nav-link {
+    font-size: 0.8em;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+
+
+  .fs-7{
+    font-size:15px;
+    font-weight: 400;
+    line-height: 2;
+  }
+  .fs-8{
+    font-size:x-small;
+    font-weight: 500;
+    /* opacity: 0.3; */
+  }
+
+  .bo-radius{
+    border: 2px solid black;
+    border-radius: 70%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .w-250{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+  .footer-link{
+    width:100px;
+    /* color:red; */
+    font-size:13px;
+    opacity: 0.8;
+    
+  }
+  .Overlay {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    width:100vw;
+    height: 100vh; 
+    border-radius: 8px;
+}
