@@ -111,6 +111,9 @@ header .contact-info div {
   header .social-icons svg:hover {
     color: #FFC107;
   }
+  /* .set-width-partener{
+
+  } */
 
   @media (max-width:511px){
     header{
